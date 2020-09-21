@@ -50,6 +50,10 @@ public class Main {
             System.out.println(t);
         }
     }
+    public static void printDataUsingStream (ArrayList<Task> tasksData){
+        tasksData.stream()
+                .forEach(System.out::println);
+    }
 
     public static void printDeadlines(ArrayList<Task> tasksData) {
         for (Task t : tasksData) {
